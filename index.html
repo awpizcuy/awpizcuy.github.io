@@ -1,10 +1,112 @@
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>Hafidz Fadilah Tinardi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container {
+            text-align: center;
+            
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #d1d1d1d4;
+        }
+        .namebox {
+            background: linear-gradient(135deg, #657bf6 0%, #f48150 100%);
+            border: 2px solid #f1e9e7;
+            max-width: 800px;
+            padding: 15px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+        .social-media a {
+            font-size: 30px;
+            margin: 0 10px;
+            color: #444;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #fda085;
+        }
+        .date-time {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+       
+        
+    </style>
 </head>
 <body>
-    <h2> Hafidz Fadilah Tinardi</h2>
-    <h2> 1202220034</h2>
-    <h2> S1 Sistem Informasi</h2>
+    <header>
+        <div class="container">
+            <img src="Apis.png" alt="Foto Profil" class="profile-pic">
+            <h1>Hafidz Fadilah Tinardi</h1>
+            <h2>1202220034</h2>
+            
+        </div>
+    </header> 
+
+    <section class="about">
+        <div class="namebox">
+            Tentang Saya
+        Halo, saya adalah Mahasiswa S1 Sistem Informasi Telkom University.
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="social-media">
+                <a href="https://facebook.com/hafidz.fadilah.315" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/hafidzfadilah_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/hafidz-fadilah-133802286/ "target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:awpizcuy@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/awpizcuy" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            
+        </div>
+        <div class="date-time">
+            <p><span id="datetime"></span></p>
+        </div>
+        <script>
+            function updateDateTime() {
+            var now = new Date();
+            var datetime = now.toLocaleString();
+            document.getElementById('datetime').textContent = datetime;
+            }
+            setInterval(updateDateTime, 1000);
+            updateDateTime(); 
+        </script>
+
+    </div>
+
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> "Never interrupt your enemy when he's making a mistake 😶".</p>
+        </div>
+    </footer>
 </body>
 </html>
